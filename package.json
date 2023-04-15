@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "firebase": "^9.19.1"
+  },
+  "name": "kumawatclasses",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
