@@ -52,4 +52,6 @@ const saveMessages = async (name, number, email, subject, message) => {
     message
   });
   console.log("Document written with ID: ", docRef.id);
+  document.getElementById('contactForm').reset()
+
 }
