@@ -12,7 +12,7 @@
 
 }
 
-.cursor{
+.cursor {
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ a {
 body {
     background-color: #FAFFFB;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .item a {
@@ -89,13 +89,11 @@ body {
 
 }
 
-.btn-primary {
-    background: var(--color-danger);
-    color: var(--color-white);
-}
-.slidebar{
+
+.slidebar {
     display: none;
 }
+
 .sidebar {
     z-index: 300;
     height: 100vh;
@@ -109,9 +107,11 @@ body {
     transition: transform 0.4s ease-in-out 0s;
 
 }
+
 .list {
     margin-top: 3rem;
 }
+
 .menu-items li a {
     display: flex;
     text-align: center;
@@ -120,9 +120,11 @@ body {
     font-size: 29px;
     font-weight: bold;
 }
-.menu-items .list a:hover{
-text-decoration: underline;
+
+.menu-items .list a:hover {
+    text-decoration: underline;
 }
+
 .socials {
     display: flex;
     /* gap: 0rem; */
@@ -132,10 +134,12 @@ text-decoration: underline;
     justify-content: center;
     /* font-weight: bolder; */
 }
+
 .socials i {
     font-size: 40px;
 }
-.socials i:hover{
+
+.socials i:hover {
     text-decoration: none;
 }
 
@@ -489,7 +493,6 @@ p {
     text-align: center;
 }
 
-
 /* courses */
 #courses {
     background-color: #274d8a;
@@ -751,7 +754,7 @@ p {
 #Popular-course .popular {
     width: 26%;
     min-width: 250px;
-    padding: 15px 0px;
+    padding: 15px 0 30px 0;
     border: 1px solid #cce7d0;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -766,6 +769,7 @@ p {
     width: 100%;
     margin-bottom: 5%;
 }
+
 
 #Popular-course .popular:hover {
     box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.09);
@@ -797,19 +801,18 @@ h3 {
     text-decoration: none;
     color: #274d8a;
     background-color: white;
-    margin-bottom: 10%;
 }
 
 .course1 p {
-    padding: 8% 20%;
+    padding: 1rem 2rem;
 }
 
 .course2 p {
-    padding: 3% 10%;
+    padding: 1rem 2rem;
 }
 
 .course3 p {
-    padding: 4% 16%;
+    padding: 1rem 2rem;
 }
 
 
@@ -931,8 +934,7 @@ h3 {
 /* footer */
 footer {
     padding-top: 1rem;
-    background-color: var(--color-bg1);
-    font-size: 0.8rem;
+    font-size: 1rem;
     height: 27rem;
     color: white;
 }
@@ -968,8 +970,11 @@ footer ul li a:hover {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
-    font-size: 19px;
+    font-size: 2rem;
     padding-right: 7px;
+}
+.footer-socials i{
+    font-size: 30px;
 }
 
 
@@ -1011,7 +1016,7 @@ footer ul li a:hover {
 }
 
 #contact-details h4 {
-    font-size: 1rem;
+    font-size: 22px;
 }
 
 #contact-details .details li {
@@ -1038,6 +1043,10 @@ footer ul li a:hover {
 #contact-details .map iframe {
     width: 104%;
     height: 79%;
+}
+
+.essentials {
+    margin-top: 35px;
 }
 
 
@@ -1111,7 +1120,7 @@ footer ul li a:hover {
 
 
 
-@media(max-width: 1280px)and (min-width: 1025px) {
+@media(max-width: 1281px)and (min-width: 1025px) {
 
 
     #bg .content-auto {
@@ -1120,29 +1129,162 @@ footer ul li a:hover {
         margin: 4.5rem auto;
     }
 
+    .content-text p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
     .content {
         margin-left: 6rem;
     }
+
+    a {
+        font-size: 18px;
+
+    }
+
+    p {
+        font-size: 18px;
+        margin: 15px 0 30px 0;
+    }
+
+    .footer-3 {
+        display: none;
+    }
+    .services .box-container .box p{
+        margin: 15px 0 15px 0;
+        font-size: 16px;
+    }
+
+    .footer-container>div h4 {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact-details h4 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    header .container-fluid {
+        padding: 0 18px
+    }
+
+    .profile-box small {
+        font-size: 18px;
+    }
+
+    .heading4 {
+        margin-top: -30rem;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .testi-container .card .content-text {
+        padding: 6px 6px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    #blog .blog-details {
+        width: 54%;
+    }
+
+    .vision {
+        font-size: 2rem;
+    }
+
+    .contact-page form .inputBox input,
+    .contact-page form textarea {
+        font-size: 1.5rem;
+    }
+
+    .bton {
+        font-size: 25px;
+    }
+
+    .profile-box p {
+        font-size: 19px;
+        margin: 10px 0 0px 0;
+        line-height: 18px;
+    }
+
+
 }
 
 @media (max-width: 1024px) {
     #bg .content-auto {
-        padding-top: 4.2rem;
+        padding-top: 5.2rem;
     }
-
+    .vision {
+        font-size: 2rem;
+    }
+    .para {
+        font-size: 17px;
+    }
     .content {
         margin-left: 4rem;
     }
+
+    #blog .blog-details a {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-3 {
+        display: none;
+    }
+
+    .footer-container>div h4 {
+        margin-bottom: 0.5rem;
+    }
+
+    #contact-details h4 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 14px 17px;
+    }
+
+    .services .box-container .box p {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
 }
 
-@media (max-width: 1254px) {
+@media (max-width: 1254px)and (min-width:1025px) {
 
     header .container-fluid {
         padding: 0 25px;
     }
 
     #bg .content-auto {
-        padding-top: 5.2rem;
+        padding-top: 8.2rem;
     }
 
     .section-p1 {
@@ -1192,7 +1334,7 @@ footer ul li a:hover {
     }
 
     #bg {
-        height: 25vh;
+        height: 42vh;
     }
 
     #blog {
@@ -1204,7 +1346,7 @@ footer ul li a:hover {
     }
 
     #bg .content-auto {
-        padding-top: 3.2rem;
+        padding-top: 9.2rem;
     }
 
     .content .text-box {
@@ -1224,11 +1366,11 @@ footer ul li a:hover {
     }
 
     #bg h1 span {
-        font-size: 3.5rem;
+        font-size: 7rem;
     }
 
     #bg .content-auto {
-        padding-top: 1.2rem;
+        padding-top: 3rem;
     }
 
     .footer-container {
@@ -1236,7 +1378,7 @@ footer ul li a:hover {
     }
 
     #contact-details .map {
-        width: 68%;
+        width: 100%;
         height: 189px;
     }
 
@@ -1278,7 +1420,7 @@ footer ul li a:hover {
     }
 
     #bg .content-auto {
-        padding-top: 0.2rem;
+        padding-top: 5rem;
     }
 
 
@@ -1295,11 +1437,11 @@ footer ul li a:hover {
     }
 
     .para {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #blog .blog-details a {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     #blog .blog-box {
@@ -1311,7 +1453,7 @@ footer ul li a:hover {
     }
 
     .section-p1 {
-        padding: 13px 34px;
+        padding: 25px 34px;
     }
 
     .believe {
@@ -1322,6 +1464,21 @@ footer ul li a:hover {
     .heading {
         margin-bottom: 1rem;
         margin-top: 1rem;
+    }
+    .btn {
+        padding: 10px 12px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    #contact-details h4 {
+        font-size: 20px;
+    }
+    #contact-details .details li a {
+        font-size: 13px;
     }
 }
 
@@ -1359,7 +1516,7 @@ footer ul li a:hover {
 
     .vision {
         font-size: 1.2rem;
-        margin-bottom: -1rem;
+        margin-bottom: 0rem;
         text-align: center;
         margin-top: 0rem;
     }
@@ -1379,7 +1536,7 @@ footer ul li a:hover {
 
     #contact-details .map {
         width: 71%;
-        height: 86px;
+        height: 180px;
     }
 
     p {
@@ -1451,6 +1608,13 @@ footer ul li a:hover {
         padding-bottom: 0rem;
     }
 
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-3 {
+        display: none;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1458,6 +1622,7 @@ footer ul li a:hover {
         margin-left: 5.5rem;
         margin-top: 0.5rem;
     }
+   
 
     #blog .blog-details {
         width: 80%;
@@ -1470,27 +1635,51 @@ footer ul li a:hover {
 
     .para {
         text-align: justify;
+        margin-bottom: 10px;
     }
 
     #blog .blog-img {
         width: 60%;
         margin-right: 0px;
     }
-
+    #Popular-course .popular {
+        padding: 15px 0px 36px 0px;
+    }
     p {
-        font-size: 0.6rem;
+        font-size: 14px;
         margin: 0px 0 0px 0;
+    }
+    .coursebtn1 {
+        margin-bottom: 0px;
     }
 
 
     footer {
         font-size: 0.6rem;
     }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #contact-details .map {
+        width: 72%;
+        height: 130px;
+    }
+
+}
+
+@media (max-width: 465px) {
+    header {
+        height: 76px;
+    }
+
+    header .container-fluid {
+        padding: 0 38px;
+    }
 }
 
 @media (max-width: 444px) {
     #blog .blog-details a {
-        margin-left: 6.5rem;
+        margin-left: 5.5rem;
     }
 
     header .navb-logo img {
@@ -1505,10 +1694,10 @@ footer ul li a:hover {
     .section-p2 {
         padding: 20px 60px;
     }
-
-    header {
-        height: 76px;
+    .heading4 {
+        margin-top: -25rem;
     }
+
 
     h2 {
         line-height: 40px;
@@ -1519,7 +1708,7 @@ footer ul li a:hover {
     }
 
     #bg .content-auto {
-        padding-top: 0.4rem;
+        padding-top: 0rem;
     }
 
     #bg h1 span {
@@ -1567,21 +1756,17 @@ footer ul li a:hover {
         margin-left: 53rem;
     }
 
-    .heading4 {
-        margin-top: -17rem;
-    }
+    .slidebar {
 
-
-    .slidebar{
-    
         width: 25%;
-     
+
     }
+
     .sidebar {
         height: 100vh;
         width: 18.5rem;
     }
-   
+
     .menu-items li a {
         padding: 25px;
         font-size: 25px;
@@ -1591,7 +1776,7 @@ footer ul li a:hover {
     .socials i {
         font-size: 30px;
     }
-   
+
 
 
 
@@ -1642,7 +1827,7 @@ footer ul li a:hover {
 
 @media (max-width: 376px) and (min-width: 362px) {
     #bg .content-auto {
-        margin: 1.4rem auto;
+        margin: 2rem auto;
     }
 
     .profile-box {
@@ -1686,7 +1871,7 @@ footer ul li a:hover {
 
     .believe {
         padding-bottom: 1rem;
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     .btn {
@@ -1783,13 +1968,10 @@ footer ul li a:hover {
         gap: 0rem;
     }
 
-    #bg .content-auto {
-        padding-top: 0.4rem;
-    }
 
     #bg .content-auto {
+        padding-top: 2.7rem;
         text-align: center;
-        padding-top: 1.7rem;
         margin: 0 auto;
     }
 
@@ -1835,7 +2017,7 @@ footer ul li a:hover {
 }
 
 
-@media (max-width: 1170px) {
+@media (max-width: 1260px) {
     #mobile {
         display: flex;
         align-items: center;
@@ -1847,9 +2029,9 @@ footer ul li a:hover {
         padding-left: 20px;
     }
 
-    .fa-solid:before {
+    /* .fa-solid:before {
         content: "\f03b";
-    }
+    } */
 
     .navb-items {
         display: flex;

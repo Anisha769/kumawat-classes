@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
 
     <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -21,9 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--swiper-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <title>Kumawat Classes</title>
 
@@ -62,6 +63,40 @@
             </div>
         </div>
     </header>
+
+    <div class="slidebar">
+        <aside class="menu-items">
+
+            <div class="sidebar active">
+                <ul class="list">
+
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">AboutUs</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li> <a href="testimonial.html">Testimonials</a></li>
+                    <li> <a href="more.html">More</a></li>
+                    <li><a href="contact.html" type="button">Contact Us</a> </li>
+                </ul>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.facebook.com/kumawatclasses79" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/radhamohanprajapati01/?igshid=ODM2MWFjZDg%3D"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=%2B919821307631&data_filter_required=AWCfvLPnPYrYFk2RQsqCGg1qhHqvdx-okSN7QqSDPb2XNFHKoqo96tlqXfjcoJarwdeXL6H2ibEr9A7vvHeYGoYBaEc_xAp8W4L0Elr89uXbl_vVIjtQFnpsFEIy_OcHaKnqLZzkk2DhVOG6TPVa1BHoTRq5mxN9Z9lYEkEqihNry9_crvqmFH8ZatIdz83cAqaFRi5bWq_Dt7jXz7A_6Bfj-oAw4_H9DiwQlrQMao164iBIgGrBBTQlP6dB1EDSHOE-crz-8yWZMsrWC6q-HhF-4FWQn45FhLLBgQEyZNgJaGyj_k0&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2jLi4jBmT6H_BeGGQYYPN3Ch_z_1Un4TRAlmL4pA5GDJ6Cm1RCfnp_cDk"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 
     <!-- about -->
     <section class="more_about section-p1">
@@ -279,31 +314,21 @@
 
 
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="javascript/main.js"></script>
 
-
-    <!-- swiperjs -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            //when window width is >= 600px
-            breakpoints: {
-                600: {
-                    slidesPerView: 2
-                }
-            }
+        $(document).ready(function () {
+            $("#bar").click(function () {
+                console.log("hey!there")
+                $('.slidebar').css('display') == 'block' ?
+                    $('.slidebar').css('display', 'none') :
+                    $('.slidebar').css('display', 'block');
+            });
         });
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <!-- scrollreveal -->
+    <!-- scrollreveals -->
     <script>
         ScrollReveal({
             reset: true,
@@ -319,7 +344,6 @@
         ScrollReveal().reveal('.team-row', { delay: 500, origin: 'bottom' });
     </script>
 
-    <!-- bootstrap -->
 
 
 </html>

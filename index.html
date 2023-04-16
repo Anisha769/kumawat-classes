@@ -183,8 +183,8 @@
                 <div class="course1">
                     <h3>Accounts</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officiis illum inventore
-                        reprehenderit officia. Nam ad voluptates odit et sunt.</p>
-                    <a href="courses.html" class="btn btn-primary">Know More</a>
+                        reprehenderit officia. Nam ad voluptates odit et.</p>
+                    <a href="courses.html" class="btn btn-primary coursebtn1">Know More</a>
                 </div>
             </div>
             <div class="popular">
@@ -192,17 +192,17 @@
                 <div class="course2">
                     <h3>Grammar</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta asperiores officia
-                        harum accusantium laboriosam maiores optio non beatae.</p>
-                    <a href="courses.html" class="btn btn-primary">Know More</a>
+                        harum accusantium laboriosam</p>
+                    <a href="courses.html" class="btn btn-primary  coursebtn2">Know More</a>
                 </div>
             </div>
             <div class="popular">
-                <img src="images/courses/maths.png" alt="">
+                <img src="images/courses/maths2.png" alt="">
                 <div class="course3">
                     <h3>Maths</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores inventore non vitae officia
-                        pariatur ipsam, nam sint et voluptatibus.</p>
-                    <a href="courses.html" class="btn btn-primary">Know More</a>
+                        </p>
+                    <a href="courses.html" class="btn btn-primary coursebtn3">Know More</a>
                 </div>
             </div>
         </div>
@@ -369,9 +369,16 @@
 
 
 
+    <script>
 
-
-    <!-- <script src="javascript.js"></script> -->
+        $(document).ready(function () {
+            $("#bar").click(function () {
+                $('.slidebar').css('display') == 'block' ?
+                    $('.slidebar').css('display', 'none') :
+                    $('.slidebar').css('display', 'block');
+            });
+        });
+    </script>
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -407,15 +414,5 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#bar").click(function () {
-                $('.slidebar').css('display') == 'block' ?
-                    $('.slidebar').css('display', 'none') :
-                    $('.slidebar').css('display', 'block');
-            });
-        });
-    </script>
-</body>
 
 </html>

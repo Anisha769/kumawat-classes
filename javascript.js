@@ -1,7 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js'
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js'
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
-console.log('hellooooo')
 const firebaseConfig = {
   apiKey: "AIzaSyDLmmMrGCu7qoiU6qt0HlAWqsiyVhIzM-M",
   authDomain: "contactform-ddbed.firebaseapp.com",
@@ -15,15 +14,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-console.log('asdasdsd')
-
 
 //   reference your database
 // const contactFormDB = firebase.database().ref("contactForm");
 document.getElementById('contacting').addEventListener("submit", submitForm);
 
 function submitForm(e) {
-  console.log('avinash')
   e.preventDefault();
 
   var name = document.getElementById('name').value;
@@ -38,12 +34,6 @@ function submitForm(e) {
 
 
 const saveMessages = async (name, number, email, subject, message) => {
-  console.log("EHHEHHEE",
-    name,
-    number,
-    email,
-    subject,
-    message)
   const docRef = await addDoc(collection(db, "contact"), {
     name,
     number,
@@ -53,5 +43,4 @@ const saveMessages = async (name, number, email, subject, message) => {
   });
   console.log("Document written with ID: ", docRef.id);
   document.getElementById('contactForm').reset()
-
 }

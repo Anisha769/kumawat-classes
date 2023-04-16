@@ -17,6 +17,8 @@
     <!-- fontawesome -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
     <title>Kumawat Classes | One of the best classes of Mira-bhayandar</title>
 
@@ -54,7 +56,39 @@
 
             </div>
         </div>
-    </header>
+    </header>  <div class="slidebar">
+        <aside class="menu-items">
+
+            <div class="sidebar active">
+                <ul class="list">
+
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">AboutUs</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li> <a href="testimonial.html">Testimonials</a></li>
+                    <li> <a href="more.html">More</a></li>
+                    <li><a href="contact.html" type="button">Contact Us</a> </li>
+                </ul>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.facebook.com/kumawatclasses79" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/radhamohanprajapati01/?igshid=ODM2MWFjZDg%3D"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=%2B919821307631&data_filter_required=AWCfvLPnPYrYFk2RQsqCGg1qhHqvdx-okSN7QqSDPb2XNFHKoqo96tlqXfjcoJarwdeXL6H2ibEr9A7vvHeYGoYBaEc_xAp8W4L0Elr89uXbl_vVIjtQFnpsFEIy_OcHaKnqLZzkk2DhVOG6TPVa1BHoTRq5mxN9Z9lYEkEqihNry9_crvqmFH8ZatIdz83cAqaFRi5bWq_Dt7jXz7A_6Bfj-oAw4_H9DiwQlrQMao164iBIgGrBBTQlP6dB1EDSHOE-crz-8yWZMsrWC6q-HhF-4FWQn45FhLLBgQEyZNgJaGyj_k0&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2jLi4jBmT6H_BeGGQYYPN3Ch_z_1Un4TRAlmL4pA5GDJ6Cm1RCfnp_cDk"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 
 
     <!-- courses -->
@@ -234,24 +268,22 @@
 
 
 
-
-
-
-
-    <script src="javascript.js"></script>
-
-    <!-- //---- for typing effect -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["", " Guiding students to success."],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-        });
 
-  //
+        $(document).ready(function () {
+            $("#bar").click(function () {
+                $('.slidebar').css('display') == 'block' ?
+                    $('.slidebar').css('display', 'none') :
+                    $('.slidebar').css('display', 'block');
+            });
+        });
     </script>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </body>
 
 </html>
