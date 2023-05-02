@@ -1564,9 +1564,7 @@ footer ul li a:hover {
     h4 {
         font-size: 1.2rem;
     }
-    .content-text p {
-        margin-top: 11px;
-    }
+
     .message {
         padding-bottom: 12px;
     }
@@ -1631,6 +1629,12 @@ footer ul li a:hover {
 
     .footer-3 {
         display: none;
+    }
+    .content-text p {
+        font-size: 16px;
+        color: black;
+        line-height: 20px;
+        margin-top: 10px;
     }
 }
 
